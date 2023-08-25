@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* End CSS Reset */
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+	font-family: Outfit, sans-serif;
+	background-color: var(--light-grey);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.card {
+	width: 320px;
+	padding: 16px;
+	background-color: var(--white);
+	border-radius: 20px;
+	box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.card img {
+	width: 338px;
+	border-radius: 10px;
+}
+
+.qr-heading {
+	width: 288px;
+	font-weight: 700;
+	font-size: 22px;
+	margin: 16px 0px 8px 0px;
+}
+
+.qr-caption {
+	width: 256px;
+	letter-spacing: 0.188px;
+	color: var(--grayish-blue);
+	margin: 8px 0 16px 0;
+}
