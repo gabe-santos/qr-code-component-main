@@ -45,6 +45,10 @@ picture {
 	--dark-blue: hsl(218, 44%, 22%);
 }
 
+html {
+	font-size: 15px;
+}
+
 body {
 	font-family: Outfit, sans-serif;
 	background-color: var(--light-grey);
@@ -52,13 +56,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 15px;
 	font-weight: 400;
 }
 
 .card {
-	width: 320px;
-	padding: 16px;
+	max-width: 20rem;
+	padding: 1rem;
 	background-color: var(--white);
 	border-radius: 20px;
 	box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
@@ -69,20 +72,26 @@ body {
 }
 
 .card img {
-	width: 338px;
+	width: 21.125rem;
 	border-radius: 10px;
 }
 
 .qr-heading {
-	width: 288px;
+	max-width: 18rem;
 	font-weight: 700;
-	font-size: 22px;
-	margin: 16px 0px 8px 0px;
+	font-size: 1.375rem;
+	margin: 1rem 0 0.5rem 0;
 }
 
 .qr-caption {
-	width: 256px;
+	max-width: 16rem;
 	letter-spacing: 0.188px;
 	color: var(--grayish-blue);
-	margin: 8px 0 16px 0;
+	margin: 0.5rem 0 1rem 0;
+}
+
+footer {
+	margin-top: 1rem;
+	max-width: 19rem;
+	text-align: center;
 }
